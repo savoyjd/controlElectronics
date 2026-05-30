@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "cavemanSensors") (type "KiCad") (uri "${PROJECT}/common/cavemanSensors/footprints/cavemanSensors.pretty") (options "") (descr ""))
+)

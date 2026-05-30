@@ -5,9 +5,10 @@
 	(uuid "be7b022a-5980-4ee7-a909-4ef448e4304d")
 	(paper "B")
 	(title_block
-		(title "sensorOne Sensor Pod Schematic")
+		(title "${boardName} Schematic")
 		(date "2026-05-22")
-		(rev "0")
+		(rev "${VERSION}")
+		(company "cavemanSensors")
 	)
 	(lib_symbols
 		(symbol "C_1"
@@ -11133,7 +11134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 186.69 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -11177,7 +11178,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 186.69 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -11199,7 +11200,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 186.69 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -11210,7 +11211,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 186.69 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 186.69 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 186.69 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -11358,7 +11381,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 320.04 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11402,7 +11425,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 320.04 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11413,7 +11436,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 320.04 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11426,6 +11449,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 320.04 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 320.04 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 320.04 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 320.04 138.43 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11596,7 +11652,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 73.66 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11619,6 +11675,61 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 73.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 73.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 73.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4uLKdaq"
+			(at 73.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 73.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 73.66 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11688,7 +11799,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 377.19 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11732,7 +11843,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 377.19 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11743,7 +11854,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 377.19 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11756,6 +11867,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 377.19 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 377.19 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 377.19 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 377.19 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11824,7 +11968,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 377.19 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11868,7 +12012,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 377.19 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11879,7 +12023,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 377.19 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -11892,6 +12036,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 377.19 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 377.19 194.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 377.19 194.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 377.19 194.31 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11983,6 +12160,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 29.21 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 29.21 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b3b7f362-8392-4439-a760-7ff3d4cffd3d")
 		)
@@ -12042,7 +12241,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10C200JB8NNN"
 			(at 151.13 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12086,7 +12285,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 151.13 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12108,7 +12307,40 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4wKpaWQ"
+		(property "Distributor Link 1" "https://mou.sr/49ZVefG"
+			(at 151.13 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C200JB8NNNC/3886845"
+			(at 151.13 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 151.13 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 151.13 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12199,6 +12431,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "caef7bb6-38c0-4699-9c1f-dca00d2e3433")
 		)
@@ -12264,7 +12518,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=0%20resistor%200603"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 247.65 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -12319,6 +12573,61 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 247.65 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 247.65 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dUOUHE"
+			(at 247.65 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/"
+			(at 247.65 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 247.65 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a172e465-9a8f-40d8-9ac3-6b2078b12178")
 		)
@@ -12357,7 +12666,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MAX31856"
+		(property "Value" "MAX31856MUD+"
 			(at 328.0567 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12380,7 +12689,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
 			(at 334.01 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -12391,7 +12700,7 @@
 				)
 			)
 		)
-		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+		(property "Description" "-55℃~+125℃ 1 10uA 19 3V~3.6V 5MHz SPI Thermocouple-to-Digital Converter TSSOP-14 ADCs/DACs - Special Purpose ROHS"
 			(at 332.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -12424,7 +12733,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4nzAiBG"
+		(property "Distributor Link 1" "https://mou.sr/3RT1kbw"
 			(at 332.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -12435,7 +12744,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31856MUD-/5050138"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31856MUD/5050138"
 			(at 332.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -12469,6 +12778,39 @@
 			)
 		)
 		(property "Manufacturer" "Analog Devices Inc./Maxim Integrated"
+			(at 332.74 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 332.74 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 332.74 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 332.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -12574,7 +12916,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=0%20resistor%200603"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 247.65 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12620,6 +12962,61 @@
 		)
 		(property "LCSC" "C21189"
 			(at 247.65 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 247.65 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 247.65 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dUOUHE"
+			(at 247.65 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/"
+			(at 247.65 35.56 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 247.65 35.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12847,7 +13244,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 336.55 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -12891,7 +13288,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 336.55 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -12913,7 +13310,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 336.55 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -12924,7 +13321,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 336.55 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 336.55 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 336.55 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -13198,7 +13617,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 328.93 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -13220,7 +13639,40 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/3VymwCd"
+		(property "Distributor Link 1" "https://mou.sr/4tXYoaV"
+			(at 328.93 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B332KB8NNNC/3887416"
+			(at 328.93 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 328.93 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 328.93 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -13336,7 +13788,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 172.72 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13348,6 +13800,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 172.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 172.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 172.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 172.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 172.72 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13440,7 +13936,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 76.2 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13463,6 +13959,61 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 76.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 76.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4uLKdaq"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 76.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 76.2 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13535,7 +14086,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/282/1/20005167C.pdf"
 			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13546,7 +14097,7 @@
 				)
 			)
 		)
-		(property "Description" "High-Speed CAN Transceiver, 1Mbps, 5V supply, Vio pin, -40C to +150C, SOIC-8"
+		(property "Description" "-40℃~+150℃ 1 15uA 1Mbps 4.5V~5.5V 45mA CAN Transceiver SOIC-8 CAN Transceivers ROHS"
 			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13579,7 +14130,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://www.mouser.com/ProductDetail/Microchip-Technology/MCP2562-H-SN?qs=eTPcRhULBzyBgcQwH2ol9w%3D%3D"
+		(property "Distributor Link 1" "https://mou.sr/4uKPH56"
 			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13590,7 +14141,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/microchip-technology/MCP2562T-H-SN/4079819"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/microchip-technology/MCP2562-H-SN/4079836"
 			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13602,6 +14153,39 @@
 			)
 		)
 		(property "LCSC" "C635955"
+			(at 78.74 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 78.74 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 78.74 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 78.74 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -13712,6 +14296,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 40.64 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 40.64 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1e41695e-3e81-427a-94ab-f657e4088a07")
 		)
@@ -13767,7 +14373,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819"
+		(property "Datasheet" "https://www.maxlinear.com/ds/spx3819.pdf"
 			(at 91.44 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13778,7 +14384,7 @@
 				)
 			)
 		)
-		(property "Description" "500mA Low drop-out regulator, Fixed Output 5.0V, SOT-23-5"
+		(property "Description" "-40℃~+125℃@(Tj) 1 16V 340mV@(500mA) 40uVrms 500mA 5V 70dB 90uA Fixed Over Current Protection、Over Temperature Protection、Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
 			(at 91.44 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13812,6 +14418,61 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SPX3819M5-L-5-0/TR"
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/49u98qg"
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/maxlinear-inc/SPX3819M5-L-5-0-TR/2472395"
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 91.44 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13936,7 +14597,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 106.68 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -13948,6 +14609,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 106.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 106.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 106.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 106.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 106.68 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -14019,7 +14724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/23913-0603WAF5101T5E/C23186"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 95.25 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -14064,6 +14769,61 @@
 			)
 		)
 		(property "LCSC" "C23186"
+			(at 95.25 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 95.25 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 95.25 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4nVtD5j"
+			(at 95.25 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf5101t5e/smd-resistors/royalohm/"
+			(at 95.25 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 95.25 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -14134,7 +14894,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 303.53 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -14145,7 +14905,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 10kΩ 125mW 150V Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 303.53 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -14178,7 +14938,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4df7BXr"
+		(property "Distributor Link 1" "https://mou.sr/4fgJ1qA"
 			(at 303.53 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -14189,7 +14949,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/"
 			(at 303.53 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -14201,6 +14961,39 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 303.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 303.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 303.53 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 303.53 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -14316,7 +15109,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4nCfdXD"
+		(property "Distributor Link 1" "https://mou.sr/4x3bgzy"
 			(at 339.09 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -14327,7 +15120,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1500t5e/smd-resistors/royalohm/"
 			(at 339.09 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -14339,6 +15132,39 @@
 			)
 		)
 		(property "LCSC" "C22808"
+			(at 339.09 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 339.09 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 339.09 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 339.09 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -14408,7 +15234,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 377.19 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14452,7 +15278,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 377.19 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14463,7 +15289,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 377.19 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14476,6 +15302,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 377.19 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 377.19 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 377.19 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 377.19 62.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14567,7 +15426,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 115.57 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14590,6 +15449,61 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 115.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 115.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 115.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4uLKdaq"
+			(at 115.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 115.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 115.57 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14704,7 +15618,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 267.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -14716,6 +15630,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 267.97 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 267.97 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 267.97 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 267.97 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 267.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -14887,6 +15845,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 43.18 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 43.18 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "sensorOnePcb"
 				(path "/be7b022a-5980-4ee7-a909-4ef448e4304d"
@@ -15020,7 +16000,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10C200JB8NNN"
 			(at 176.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -15064,7 +16044,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 176.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -15076,6 +16056,50 @@
 			)
 		)
 		(property "LCSC" "C1648"
+			(at 176.53 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/49ZVefG"
+			(at 176.53 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C200JB8NNNC/3886845"
+			(at 176.53 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 176.53 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 176.53 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -15227,7 +16251,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 105.41 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -15271,7 +16295,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 105.41 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -15293,7 +16317,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 105.41 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -15304,7 +16328,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 105.41 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 105.41 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 105.41 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -15397,7 +16443,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 163.83 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15420,6 +16466,61 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 163.83 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 163.83 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 163.83 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4uLKdaq"
+			(at 163.83 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 163.83 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 163.83 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15491,7 +16592,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 359.41 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15535,7 +16636,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 359.41 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15557,7 +16658,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 359.41 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15568,7 +16669,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 359.41 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 359.41 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 359.41 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15651,6 +16774,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 29.21 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 29.21 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 29.21 254 0)
 			(hide yes)
 			(show_name no)
@@ -15796,7 +16941,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 95.25 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -15840,7 +16985,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 95.25 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -15862,7 +17007,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 95.25 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -15873,7 +17018,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 95.25 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 95.25 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 95.25 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -16460,7 +17627,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 27.94 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -16472,6 +17639,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 27.94 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 27.94 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -16699,7 +17910,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 219.71 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16743,7 +17954,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4df7BXr"
+		(property "Distributor Link 1" "https://mou.sr/4fgJ1qA"
 			(at 219.71 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16754,7 +17965,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/"
 			(at 219.71 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16766,6 +17977,39 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 219.71 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 219.71 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 219.71 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 219.71 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16892,7 +18136,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MAX31856"
+		(property "Value" "MAX31856MUD+"
 			(at 322.9767 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16915,7 +18159,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX31856.pdf"
 			(at 328.93 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16926,7 +18170,7 @@
 				)
 			)
 		)
-		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+		(property "Description" "-55℃~+125℃ 1 10uA 19 3V~3.6V 5MHz SPI Thermocouple-to-Digital Converter TSSOP-14 ADCs/DACs - Special Purpose ROHS"
 			(at 327.66 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16959,7 +18203,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4nzAiBG"
+		(property "Distributor Link 1" "https://mou.sr/3RT1kbw"
 			(at 327.66 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16970,7 +18214,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31856MUD-/5050138"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31856MUD/5050138"
 			(at 327.66 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -17004,6 +18248,39 @@
 			)
 		)
 		(property "Manufacturer" "Analog Devices Inc./Maxim Integrated"
+			(at 327.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 327.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 327.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 327.66 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -17108,7 +18385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/PANASONIC-ERA3AEB104V/C190609"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf"
 			(at 172.72 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -17154,6 +18431,61 @@
 		)
 		(property "LCSC" "C190609"
 			(at 172.72 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 172.72 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 172.72 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4fQ43MR"
+			(at 172.72 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/panasonic-industry/ERA-3AEB104V/1465902"
+			(at 172.72 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
+			(at 172.72 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17347,7 +18679,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 44.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -17359,6 +18691,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 44.45 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 44.45 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 44.45 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 44.45 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 44.45 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -17429,7 +18805,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 162.56 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17440,7 +18816,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 10kΩ 125mW 150V Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 162.56 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17473,7 +18849,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4df7BXr"
+		(property "Distributor Link 1" "https://mou.sr/4fgJ1qA"
 			(at 162.56 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17484,7 +18860,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/"
 			(at 162.56 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17496,6 +18872,39 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 162.56 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 162.56 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 162.56 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 162.56 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17645,7 +19054,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 209.55 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -17689,7 +19098,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 209.55 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -17711,7 +19120,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 209.55 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -17722,7 +19131,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 209.55 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 209.55 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 209.55 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -17873,7 +19304,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6241/1763_Commercial_Chip_C0G.pdf"
 			(at 359.41 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -17917,7 +19348,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 359.41 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -17939,7 +19370,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dcPEZy"
+		(property "Distributor Link 1" "https://mou.sr/43Ixhpz"
 			(at 359.41 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -17950,7 +19381,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B103KBANNNC/3886673"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/knowles-novacap/0603B103K500NT/21849983"
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 359.41 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 359.41 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -17982,7 +19435,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -18030,6 +19483,28 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 278.13 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 278.13 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 278.13 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -18260,7 +19735,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 364.49 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -18304,7 +19779,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 364.49 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -18326,7 +19801,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 364.49 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -18337,7 +19812,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 364.49 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 364.49 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 364.49 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -18565,7 +20062,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/23913-0603WAF5101T5E/C23186"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 267.97 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -18610,6 +20107,61 @@
 			)
 		)
 		(property "LCSC" "C23186"
+			(at 267.97 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 267.97 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 267.97 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4nVtD5j"
+			(at 267.97 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf5101t5e/smd-resistors/royalohm/"
+			(at 267.97 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 267.97 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -18702,6 +20254,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 59.69 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 59.69 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "47885c3f-11cb-4cd2-8784-9c0633584a4e")
 		)
@@ -18760,7 +20334,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6241/1763_Commercial_Chip_C0G.pdf"
 			(at 364.49 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -18804,7 +20378,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 364.49 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -18826,7 +20400,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dcPEZy"
+		(property "Distributor Link 1" "https://mou.sr/43Ixhpz"
 			(at 364.49 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -18837,7 +20411,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B103KBANNNC/3886673"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/knowles-novacap/0603B103K500NT/21849983"
+			(at 364.49 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 364.49 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 364.49 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -19032,7 +20628,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 105.41 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -19044,6 +20640,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 105.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 105.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 105.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 105.41 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 105.41 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -19114,7 +20754,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lis3dh.pdf"
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf"
 			(at 194.31 242.57 0)
 			(hide yes)
 			(show_name no)
@@ -19158,7 +20798,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/3Rfpqx5"
+		(property "Distributor Link 1" "https://mou.sr/4xdHCHU"
 			(at 199.39 240.03 0)
 			(hide yes)
 			(show_name no)
@@ -19170,6 +20810,50 @@
 			)
 		)
 		(property "LCSC" "C15134"
+			(at 199.39 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 199.39 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 199.39 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/stmicroelectronics/LIS3DHTR/2334338"
+			(at 199.39 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 199.39 240.03 0)
 			(hide yes)
 			(show_name no)
@@ -19405,10 +21089,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "999e2a46-ec15-4ac2-9e17-640703eab3d4")
 		(property "Reference" "J2"
-			(at 414.02 130.8099 0)
+			(at 397.764 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19419,7 +21102,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x08"
-			(at 414.02 133.3499 0)
+			(at 397.764 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19452,6 +21135,28 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 411.48 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 411.48 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 411.48 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -19664,7 +21369,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 339.09 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -19686,7 +21391,40 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/3VymwCd"
+		(property "Distributor Link 1" "https://mou.sr/4tXYoaV"
+			(at 339.09 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B332KB8NNNC/3887416"
+			(at 339.09 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 339.09 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 339.09 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -19916,7 +21654,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 321.31 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19960,7 +21698,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 321.31 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19982,7 +21720,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 321.31 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -19993,7 +21731,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 321.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 321.31 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 321.31 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -20537,7 +22297,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 377.19 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -20581,7 +22341,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 377.19 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -20592,7 +22352,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 377.19 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -20605,6 +22365,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 377.19 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 377.19 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 377.19 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 377.19 201.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20673,7 +22466,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=0%20resistor%200603"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 36.83 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -20719,6 +22512,61 @@
 		)
 		(property "LCSC" "C21189"
 			(at 36.83 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 36.83 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 36.83 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dUOUHE"
+			(at 36.83 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/"
+			(at 36.83 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 36.83 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20800,6 +22648,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 29.21 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 29.21 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 29.21 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -20988,7 +22858,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4nCfdXD"
+		(property "Distributor Link 1" "https://mou.sr/4x3bgzy"
 			(at 328.93 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -20999,7 +22869,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1500t5e/smd-resistors/royalohm/"
 			(at 328.93 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -21011,6 +22881,39 @@
 			)
 		)
 		(property "LCSC" "C22808"
+			(at 328.93 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 328.93 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 328.93 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 328.93 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -21159,7 +23062,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 57.15 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -21204,6 +23107,61 @@
 			)
 		)
 		(property "Manufacturer Part Number" "0603WAF1200T5E"
+			(at 57.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 57.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 57.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNJZIl"
+			(at 57.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1200t5e/smd-resistors/royalohm/"
+			(at 57.15 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 57.15 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -21275,7 +23233,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6241/1763_Commercial_Chip_C0G.pdf"
 			(at 364.49 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -21319,7 +23277,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 364.49 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -21341,7 +23299,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dcPEZy"
+		(property "Distributor Link 1" "https://mou.sr/43Ixhpz"
 			(at 364.49 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -21352,7 +23310,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B103KBANNNC/3886673"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/knowles-novacap/0603B103K500NT/21849983"
+			(at 364.49 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 364.49 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 364.49 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -21626,7 +23606,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 160.02 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -21638,6 +23618,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 160.02 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 160.02 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 160.02 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 160.02 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 160.02 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -21709,7 +23733,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 316.23 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21753,7 +23777,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 316.23 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21775,7 +23799,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 316.23 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21786,7 +23810,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 316.23 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 316.23 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 316.23 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21857,7 +23903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
+		(property "Datasheet" ""
 			(at 68.58 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -21869,6 +23915,28 @@
 			)
 		)
 		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin"
+			(at 68.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 68.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 68.58 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -22189,7 +24257,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 341.63 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -22233,7 +24301,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 341.63 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -22255,7 +24323,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dpIZtL"
+		(property "Distributor Link 1" "https://mou.sr/4nYrB47"
 			(at 341.63 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -22266,7 +24334,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KCFNNNE/5961324"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082"
+			(at 341.63 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 341.63 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 341.63 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -22298,7 +24388,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -22346,6 +24436,28 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 278.13 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 278.13 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 278.13 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -22415,7 +24527,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=0%20resistor%200603"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 247.65 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -22461,6 +24573,61 @@
 		)
 		(property "LCSC" "C21189"
 			(at 247.65 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 247.65 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 247.65 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dUOUHE"
+			(at 247.65 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/"
+			(at 247.65 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 247.65 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22604,7 +24771,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/shenzhen-sctf-electronics/SX3M8-000M20F30TNN/25572935"
+		(property "Distributor Link 1" ""
+			(at 163.83 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/shenzhen-sctf-electronics/SX3M8-000M20F30TNN/25572935"
+			(at 163.83 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 163.83 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -22679,7 +24868,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/728/1/SPX3819.pdf"
 			(at 91.44 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -22690,7 +24879,7 @@
 				)
 			)
 		)
-		(property "Description" "500mA Low drop-out regulator, Fixed Output 3.3V, SOT-23-5"
+		(property "Description" "-40℃~+125℃ 1 16V 3.3V 340mV@(500mA) 40uVrms 500mA 70dB 90uA Fixed Over Current Protection、Over Temperature Protection、Enable Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
 			(at 91.44 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -22724,6 +24913,61 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SPX3819M5-L-3-3/TR"
+			(at 91.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 91.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 91.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dJ23Dm"
+			(at 91.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/maxlinear-inc/SPX3819M5-L-3-3-TR/2472394"
+			(at 91.44 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
 			(at 91.44 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -22880,7 +25124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 330.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22924,7 +25168,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dA7Paz"
+		(property "Distributor Link 1" "https://mou.sr/4vinUsC"
 			(at 330.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22935,7 +25179,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/"
 			(at 330.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22948,6 +25192,39 @@
 		)
 		(property "LCSC" "C22775"
 			(at 330.2 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 330.2 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 330.2 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
+			(at 330.2 101.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23334,7 +25611,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/parts/componentSearch?searchTxt=0%20resistor%200603"
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 147.32 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -23379,6 +25656,61 @@
 			)
 		)
 		(property "LCSC" "C21189"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dUOUHE"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/"
+			(at 147.32 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 147.32 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -23787,6 +26119,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 55.88 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 55.88 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "sensorOnePcb"
 				(path "/be7b022a-5980-4ee7-a909-4ef448e4304d"
@@ -23863,7 +26217,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 113.03 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -23886,6 +26240,61 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 113.03 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 113.03 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 113.03 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4uLKdaq"
+			(at 113.03 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549"
+			(at 113.03 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 113.03 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -24000,7 +26409,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 177.8 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -24012,6 +26421,50 @@
 			)
 		)
 		(property "LCSC" "C1623"
+			(at 177.8 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/4dNlwD6"
+			(at 177.8 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741"
+			(at 177.8 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 177.8 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 177.8 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -24161,7 +26614,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6241/1763_Commercial_Chip_C0G.pdf"
 			(at 359.41 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -24205,7 +26658,7 @@
 				)
 			)
 		)
-		(property "Field8" ""
+		(property "Field8" "Basic"
 			(at 359.41 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -24227,7 +26680,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4dcPEZy"
+		(property "Distributor Link 1" "https://mou.sr/43Ixhpz"
 			(at 359.41 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -24238,7 +26691,29 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B103KBANNNC/3886673"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/knowles-novacap/0603B103K500NT/21849983"
+			(at 359.41 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 359.41 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 359.41 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -24331,6 +26806,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 50.8 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 50.8 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9545e6fd-3541-4f65-8097-4c9e45e55bc5")
 		)
@@ -24398,6 +26895,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 157.48 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 157.48 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -24560,7 +27079,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "-40℃~+125℃ 1.62V~3.6V 128KB 32 Bit 32KB 44 80MHz ARM Cortex-M0+ Built-in+External FLASH LQFP-48(7x7) Microcontrollers (MCU/MPU/SOC) ROHS"
 			(at 199.39 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -24571,7 +27090,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/texas-instruments/MSPM0G3507SPTR/22106901"
+		(property "Distributor Link 1" "https://mou.sr/4akP21Z"
 			(at 302.768 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -24582,7 +27101,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Texas-Instruments/MSPM0G3507SPTR?qs=ST9lo4GX8V1GEI0H4GAJcA%3D%3D&srsltid=AfmBOopFNJiBQjXoMqYmxUDZTB0E4Yd0pYqglmeAPL15YshEXLcqYufZ"
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/texas-instruments/MSPM0G3507SPTR/22106901"
 			(at 350.012 165.862 0)
 			(hide yes)
 			(show_name no)
@@ -24617,6 +27136,39 @@
 		)
 		(property "Manufacturer Part Number" "MSPM0G3507SPTR"
 			(at 265.684 157.988 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 204.47 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 204.47 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
+			(at 204.47 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24981,7 +27533,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.royalohm.com/assets/pdf/products/smd/1.pdf"
 			(at 308.61 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -24992,7 +27544,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 10kΩ 125mW 150V Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 308.61 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -25025,7 +27577,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 1" "https://mou.sr/4df7BXr"
+		(property "Distributor Link 1" "https://mou.sr/4fgJ1qA"
 			(at 308.61 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -25036,7 +27588,7 @@
 				)
 			)
 		)
-		(property "Distributor Link 2" ""
+		(property "Distributor Link 2" "https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/"
 			(at 308.61 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -25048,6 +27600,39 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 308.61 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 308.61 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 308.61 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Basic"
 			(at 308.61 189.23 0)
 			(hide yes)
 			(show_name no)
