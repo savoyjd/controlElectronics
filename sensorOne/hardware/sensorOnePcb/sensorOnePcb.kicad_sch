@@ -12372,10 +12372,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a2bf08b-beba-4ea9-adb9-ef01a1fdb451")
 		(property "Reference" "J1"
@@ -12398,7 +12398,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 39.37 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12409,7 +12409,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 39.37 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12420,7 +12420,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
+		(property "Description" "-25℃~+85℃ 1 100V 1x4P 2A 2mm 4 4.5mm 4P 6mm 9.9mm Brass K Pin PA66 PH Through Hole Tin UL94V-0 White 插件,P=2mm Wire To Board Connector ROHS"
 			(at 39.37 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12443,6 +12443,72 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 1" "https://mou.sr/3PHBmaw"
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor Link 2" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-PH-K-S/926613"
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Extended"
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 39.37 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "B4B-PH-K-S(LF)(SN)"
 			(at 39.37 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -21088,7 +21154,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "999e2a46-ec15-4ac2-9e17-640703eab3d4")
 		(property "Reference" "J2"
 			(at 397.764 142.24 0)
