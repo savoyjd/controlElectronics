@@ -1,0 +1,23 @@
+Designator,Quantity,DNP,Value,Footprint,Manufacturer,Manufacturer Part Number,,Distributor Link 1,Distributor Link 2,LCSC
+"C1,C3,C4,C5,C22,C23,C24,C26",8,,470nf,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B474KA8NNNC,,https://mou.sr/4dNlwD6,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KA8NNNC/3887741,C1623
+"C2,C20,C21,C25,C27",5,,10u,Capacitor_SMD:C_0805_2012Metric,Samsung Electro-Mechanics,CL21A106KAYNNNE,,https://mou.sr/4uLKdaq,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KAYNNNE/3888549,C15850
+"C6,C7,C8,C9,C10,C13,C14,C16,C30,C31",10,,100n,Capacitor_SMD:C_0603_1608Metric,YAGEO,CC0603KRX7R9BB104,,https://mou.sr/4nYrB47,https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082,C14663
+"C11,C12,C15,C17",4,,10n,Capacitor_SMD:C_0603_1608Metric,FH (Guangdong Fenghua Advanced Tech),0603B103K500NT,,https://mou.sr/43Ixhpz,https://www.digikey.com/en/products/detail/knowles-novacap/0603B103K500NT/21849983,C57112
+"C18,C19",2,,3.3n,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10B332KB8NNNC,,https://mou.sr/4tXYoaV,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B332KB8NNNC/3887416,C1613
+"C28,C29",2,,20p,Capacitor_SMD:C_0603_1608Metric,Samsung Electro-Mechanics,CL10C200JB8NNNC,,https://mou.sr/49ZVefG,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10C200JB8NNNC/3886845,C1648
+J1,1,,Conn_01x04_Pin,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,JST,B4B-PH-K-S(LF)(SN),,https://mou.sr/3PHBmaw,https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-PH-K-S/926613,C131334
+"R1,R15,R16,R17,R18",5,,0R,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF0000T5E,,https://mou.sr/4dUOUHE,https://www.tme.com/us/en-us/details/0603waf0000t5e/smd-resistors/royalohm/,C21189
+"R2,R4",2,,5k1,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF5101T5E,,https://mou.sr/4nVtD5j,https://www.tme.com/us/en-us/details/0603waf5101t5e/smd-resistors/royalohm/,C23186
+R3,1,,100k,Resistor_SMD:R_0603_1608Metric,PANASONIC,ERA3AEB104V,,https://mou.sr/4fQ43MR,https://www.digikey.com/en/products/detail/panasonic-industry/ERA-3AEB104V/1465902,C190609
+"R5,R6,R9,R10,R12,R13",6,,100,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1000T5E,,https://mou.sr/4vinUsC,https://www.tme.com/us/en-us/details/0603waf1000t5e/smd-resistors/royalohm/,C22775
+"R7,R8,R19",3,,10k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,,https://mou.sr/4fgJ1qA,https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/,C25804
+"R11,R14",2,,150,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1500T5E,,https://mou.sr/4x3bgzy,https://www.tme.com/us/en-us/details/0603waf1500t5e/smd-resistors/royalohm/,C22808
+R20,1,DNP,10k,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1002T5E,,https://mou.sr/4fgJ1qA,https://www.tme.com/us/en-us/details/0603waf1002t5e/smd-resistors/royalohm/,C25804
+R21,1,,120,Resistor_SMD:R_0603_1608Metric,UNI-ROYAL(Uniroyal Elec),0603WAF1200T5E,,https://mou.sr/4dNJZIl,https://www.tme.com/us/en-us/details/0603waf1200t5e/smd-resistors/royalohm/,C22787
+U1,1,,MSPM0G3507SPTR,MSPM0:PT0048A-IPC_A,Texas Instruments,MSPM0G3507SPTR,,https://mou.sr/4akP21Z,https://www.digikey.com/en/products/detail/texas-instruments/MSPM0G3507SPTR/22106901,C22362630
+U2,1,,MCP2562-H-SN,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Microchip Tech,MCP2562-H/SN,,https://mou.sr/4uKPH56,https://www.digikey.com/en/products/detail/microchip-technology/MCP2562-H-SN/4079836,C635955
+"U3,U4",2,,MAX31856MUD+,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,Analog Devices Inc./Maxim Integrated,MAX31856MUD+,,https://mou.sr/3RT1kbw,https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX31856MUD/5050138,C116632
+U5,1,,SPX3819M5-L-5-0,Package_TO_SOT_SMD:SOT-23-5,MaxLinear,SPX3819M5-L-5-0/TR,,https://mou.sr/49u98qg,https://www.digikey.com/en/products/detail/maxlinear-inc/SPX3819M5-L-5-0-TR/2472395,C13417
+U6,1,,SPX3819M5-L-3-3,Package_TO_SOT_SMD:SOT-23-5,MaxLinear,SPX3819M5-L-3-3/TR,,https://mou.sr/4dJ23Dm,https://www.digikey.com/en/products/detail/maxlinear-inc/SPX3819M5-L-3-3-TR/2472394,C9055
+U7,1,,LIS3DH,Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y,STMicroelectronics,LIS3DHTR,,https://mou.sr/4xdHCHU,https://www.digikey.com/en/products/detail/stmicroelectronics/LIS3DHTR/2334338,C15134
+X1,1,,8M,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,Shenzhen SCTF Elec,SX3M8.000M20F30TNN,,,https://www.digikey.com/en/products/detail/shenzhen-sctf-electronics/SX3M8-000M20F30TNN/25572935,C2901556
