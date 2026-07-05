@@ -8,6 +8,7 @@ SET(SOURCES screens/ui_Screen1.c
     images/ui_img_tempcvtsmall_png.c
     images/ui_img_tempsmall_png.c
     images/ui_img_vertical_temp_gauge_png.c
-    images/ui_img_orangeneedlesmal_png.c)
+    images/ui_img_orangeneedlesmal_png.c
+    images/ui_img_blueneedlesmall_png.c)
 
 add_library(ui ${SOURCES})

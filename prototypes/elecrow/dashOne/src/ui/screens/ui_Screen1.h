@@ -17,7 +17,7 @@ extern lv_obj_t * ui_Screen1;
 extern lv_obj_t * ui_tempAux;
 extern lv_obj_t * ui_tempCVT;
 extern lv_obj_t * ui_indicatorPitch;
-extern lv_obj_t * ui_idicatorRoll;
+extern lv_obj_t * ui_indicatorRoll;
 extern lv_obj_t * ui_angleRoll;
 extern lv_obj_t * ui_anglePitch;
 extern lv_obj_t * ui_timeCurrent;
@@ -38,6 +38,7 @@ extern lv_obj_t * ui_Image7;
 extern lv_obj_t * ui_speedWheel;
 extern lv_obj_t * ui_speedGPS;
 extern lv_obj_t * ui_indicatorSpeedGPS;
+extern lv_obj_t * ui_indicatorSpeedWheel;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

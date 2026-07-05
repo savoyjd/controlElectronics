@@ -9,7 +9,7 @@ lv_obj_t * ui_Screen1 = NULL;
 lv_obj_t * ui_tempAux = NULL;
 lv_obj_t * ui_tempCVT = NULL;
 lv_obj_t * ui_indicatorPitch = NULL;
-lv_obj_t * ui_idicatorRoll = NULL;
+lv_obj_t * ui_indicatorRoll = NULL;
 lv_obj_t * ui_angleRoll = NULL;
 lv_obj_t * ui_anglePitch = NULL;
 lv_obj_t * ui_timeCurrent = NULL;
@@ -30,6 +30,7 @@ lv_obj_t * ui_Image7 = NULL;
 lv_obj_t * ui_speedWheel = NULL;
 lv_obj_t * ui_speedGPS = NULL;
 lv_obj_t * ui_indicatorSpeedGPS = NULL;
+lv_obj_t * ui_indicatorSpeedWheel = NULL;
 // event funtions
 
 // build funtions
@@ -78,15 +79,15 @@ void ui_Screen1_screen_init(void)
     lv_obj_add_flag(ui_indicatorPitch, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_indicatorPitch, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_idicatorRoll = lv_img_create(ui_Screen1);
-    lv_img_set_src(ui_idicatorRoll, &ui_img_roll75_png);
-    lv_obj_set_width(ui_idicatorRoll, LV_SIZE_CONTENT);   /// 75
-    lv_obj_set_height(ui_idicatorRoll, LV_SIZE_CONTENT);    /// 75
-    lv_obj_set_x(ui_idicatorRoll, 150);
-    lv_obj_set_y(ui_idicatorRoll, -160);
-    lv_obj_set_align(ui_idicatorRoll, LV_ALIGN_CENTER);
-    lv_obj_add_flag(ui_idicatorRoll, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
-    lv_obj_clear_flag(ui_idicatorRoll, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_indicatorRoll = lv_img_create(ui_Screen1);
+    lv_img_set_src(ui_indicatorRoll, &ui_img_roll75_png);
+    lv_obj_set_width(ui_indicatorRoll, LV_SIZE_CONTENT);   /// 75
+    lv_obj_set_height(ui_indicatorRoll, LV_SIZE_CONTENT);    /// 75
+    lv_obj_set_x(ui_indicatorRoll, 150);
+    lv_obj_set_y(ui_indicatorRoll, -160);
+    lv_obj_set_align(ui_indicatorRoll, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_indicatorRoll, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_indicatorRoll, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_angleRoll = lv_label_create(ui_Screen1);
     lv_obj_set_width(ui_angleRoll, LV_SIZE_CONTENT);   /// 1
@@ -304,6 +305,16 @@ void ui_Screen1_screen_init(void)
     lv_obj_clear_flag(ui_indicatorSpeedGPS, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_img_set_angle(ui_indicatorSpeedGPS, -1250);
 
+    ui_indicatorSpeedWheel = lv_img_create(ui_Screen1);
+    lv_img_set_src(ui_indicatorSpeedWheel, &ui_img_blueneedlesmall_png);
+    lv_obj_set_width(ui_indicatorSpeedWheel, LV_SIZE_CONTENT);   /// 350
+    lv_obj_set_height(ui_indicatorSpeedWheel, LV_SIZE_CONTENT);    /// 350
+    lv_obj_set_x(ui_indicatorSpeedWheel, -215);
+    lv_obj_set_y(ui_indicatorSpeedWheel, 0);
+    lv_obj_set_align(ui_indicatorSpeedWheel, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_indicatorSpeedWheel, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_indicatorSpeedWheel, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
 }
 
 void ui_Screen1_screen_destroy(void)
@@ -315,7 +326,7 @@ void ui_Screen1_screen_destroy(void)
     ui_tempAux = NULL;
     ui_tempCVT = NULL;
     ui_indicatorPitch = NULL;
-    ui_idicatorRoll = NULL;
+    ui_indicatorRoll = NULL;
     ui_angleRoll = NULL;
     ui_anglePitch = NULL;
     ui_timeCurrent = NULL;
@@ -336,5 +347,6 @@ void ui_Screen1_screen_destroy(void)
     ui_speedWheel = NULL;
     ui_speedGPS = NULL;
     ui_indicatorSpeedGPS = NULL;
+    ui_indicatorSpeedWheel = NULL;
 
 }
