@@ -19,6 +19,13 @@ except ImportError:
     serial = None
 
 
+MAX_SPEED_MPH = 45.0
+
+
+def clamp_speed_mph(value):
+    return min(max(value, 0.0), MAX_SPEED_MPH)
+
+
 def field(value, missing=False, precision=2):
     if missing:
         return "-"
@@ -39,14 +46,14 @@ def make_spod_frame(elapsed_s, args):
     if args.fixed:
         cvt_f = args.cvt
         aux_f = args.aux
-        speed_mph = args.speed
+        speed_mph = clamp_speed_mph(args.speed)
         rpm = args.rpm
         roll_deg = args.roll
         pitch_deg = args.pitch
     else:
         cvt_f = 165.0 + 35.0 * math.sin(elapsed_s * 0.21)
         aux_f = 120.0 + 20.0 * math.sin(elapsed_s * 0.17 + 1.3)
-        speed_mph = 30.0 + 25.0 * math.sin(elapsed_s * 0.41)
+        speed_mph = clamp_speed_mph(22.5 + 22.5 * math.sin(elapsed_s * 0.41))
         rpm = speed_mph * 95.0
         roll_deg = 22.0 * math.sin(elapsed_s * 0.73)
         pitch_deg = 14.0 * math.sin(elapsed_s * 0.57 + 0.6)
@@ -65,7 +72,7 @@ def make_spod_frame(elapsed_s, args):
 
 def make_rfod_frame(elapsed_s, args):
     if args.rf_fixed:
-        gps_speed_mph = args.gps_speed
+        gps_speed_mph = clamp_speed_mph(args.gps_speed)
         lat = args.lat
         lon = args.lon
         gps_fix = args.gps_fix
@@ -73,7 +80,7 @@ def make_rfod_frame(elapsed_s, args):
         lap_last_ms = args.lap_last_ms
         lap_best_ms = args.lap_best_ms
     else:
-        gps_speed_mph = 29.0 + 24.0 * math.sin(elapsed_s * 0.39 + 0.2)
+        gps_speed_mph = clamp_speed_mph(22.5 + 22.5 * math.sin(elapsed_s * 0.39 + 0.2))
         lat = args.lat + 0.0004 * math.sin(elapsed_s * 0.035)
         lon = args.lon + 0.0004 * math.cos(elapsed_s * 0.035)
         gps_fix = True

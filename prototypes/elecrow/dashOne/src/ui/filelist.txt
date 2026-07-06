@@ -8,5 +8,5 @@ images/ui_img_speedgage350_png.c
 images/ui_img_tempcvtsmall_png.c
 images/ui_img_tempsmall_png.c
 images/ui_img_vertical_temp_gauge_png.c
-images/ui_img_orangeneedlesmal_png.c
-images/ui_img_blueneedlesmall_png.c
+images/ui_img_orange_needle_5x125_png.c
+images/ui_img_blue_needle_5x125_png.c

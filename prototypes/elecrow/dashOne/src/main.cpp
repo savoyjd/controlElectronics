@@ -19,15 +19,13 @@ static lv_disp_draw_buf_t draw_buf;
 static lv_color_t *buf;
 static lv_color_t *buf1;
 
-uint16_t touch_x, touch_y;
-
 static constexpr uint32_t kDisplayUpdateMs = 33;
 static constexpr uint32_t kSensorPodTimeoutMs = 500;
 static constexpr uint32_t kRfPodTimeoutMs = 1500;
 static constexpr size_t kSerialLineMax = 128;
 static constexpr int16_t kSpeedNeedleMinAngle = -1250;
 static constexpr int16_t kSpeedNeedleMaxAngle = 1250;
-static constexpr int16_t kSpeedNeedleMaxMph = 60;
+static constexpr int16_t kSpeedNeedleMaxMph = 45;
 static constexpr int16_t kAttitudeMaxDegrees = 30;
 static constexpr int16_t kAttitudeMaxAngle = 300;
 static constexpr int16_t kTempMaxF = 250;
@@ -77,7 +75,6 @@ struct RfPodSnapshot {
 
 SensorPodSnapshot sensor_pod;
 RfPodSnapshot rf_pod;
-uint32_t serial_bytes_seen = 0;
 uint32_t serial0_bytes_seen = 0;
 uint32_t spod_frames_seen = 0;
 uint32_t rfod_frames_seen = 0;
@@ -276,11 +273,6 @@ void processSerialByte(char c) {
   }
 }
 void processSerialInput() {
-  while (Serial.available() > 0) {
-    serial_bytes_seen++;
-    processSerialByte(static_cast<char>(Serial.read()));
-  }
-
   while (Serial0.available() > 0) {
     serial0_bytes_seen++;
     processSerialByte(static_cast<char>(Serial0.read()));
@@ -326,6 +318,18 @@ void setBarEnabled(lv_obj_t *bar, bool enabled) {
     lv_obj_clear_state(bar, LV_STATE_DISABLED);
   } else {
     lv_obj_add_state(bar, LV_STATE_DISABLED);
+  }
+}
+
+void setObjectHidden(lv_obj_t *obj, bool hidden) {
+  if (obj == nullptr) {
+    return;
+  }
+
+  if (hidden) {
+    lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
+  } else {
+    lv_obj_clear_flag(obj, LV_OBJ_FLAG_HIDDEN);
   }
 }
 
@@ -419,16 +423,16 @@ void setLapTimeLabel(lv_obj_t *label, const OptionalFloat &value) {
     return;
   }
 
-  long rounded_centiseconds = lroundf(value.value / 10.0f);
-  if (rounded_centiseconds < 0) {
-    rounded_centiseconds = 0;
+  long rounded_tenths = lroundf(value.value / 100.0f);
+  if (rounded_tenths < 0) {
+    rounded_tenths = 0;
   }
-  const uint32_t total_centiseconds = static_cast<uint32_t>(rounded_centiseconds);
-  const uint32_t minutes = total_centiseconds / 6000UL;
-  const uint32_t seconds = (total_centiseconds / 100UL) % 60UL;
-  const uint32_t centiseconds = total_centiseconds % 100UL;
+  const uint32_t total_tenths = static_cast<uint32_t>(rounded_tenths);
+  const uint32_t minutes = total_tenths / 600UL;
+  const uint32_t seconds = (total_tenths / 10UL) % 60UL;
+  const uint32_t tenths = total_tenths % 10UL;
   char text[12];
-  snprintf(text, sizeof(text), "%lu:%02lu.%02lu", static_cast<unsigned long>(minutes), static_cast<unsigned long>(seconds), static_cast<unsigned long>(centiseconds));
+  snprintf(text, sizeof(text), "%lu:%02lu.%lu", static_cast<unsigned long>(minutes), static_cast<unsigned long>(seconds), static_cast<unsigned long>(tenths));
   lv_label_set_text(label, text);
   setLabelEnabled(label, true);
 }
@@ -476,6 +480,22 @@ void setTemperatureBar(lv_obj_t *bar, const OptionalFloat &value) {
   setBarEnabled(bar, true);
 }
 
+void updateSpeedDisplays(const OptionalFloat &wheel_speed_mph, const OptionalFloat &gps_speed_mph) {
+  const bool use_wheel_speed = wheel_speed_mph.present;
+  const bool use_gps_speed = !use_wheel_speed && gps_speed_mph.present;
+  OptionalFloat missing;
+
+  setObjectHidden(ui_indicatorSpeedWheel, !use_wheel_speed);
+  setObjectHidden(ui_indicatorSpeedGPS, !use_gps_speed);
+  setObjectHidden(ui_speedWheel, false);
+  setObjectHidden(ui_speedGPS, false);
+
+  setNeedleAngle(ui_indicatorSpeedWheel, use_wheel_speed ? wheel_speed_mph : missing, true);
+  setIntegerLabel(ui_speedWheel, wheel_speed_mph);
+  setNeedleAngle(ui_indicatorSpeedGPS, use_gps_speed ? gps_speed_mph : missing, true);
+  setIntegerLabel(ui_speedGPS, gps_speed_mph);
+}
+
 SensorPodSnapshot sensorPodDisplaySnapshot() {
   display_snapshot_count++;
   SensorPodSnapshot snapshot = sensor_pod;
@@ -507,10 +527,8 @@ RfPodSnapshot rfPodDisplaySnapshot() {
 void disableSensorPodDisplay() {
   OptionalFloat missing;
 
-  setNeedleAngle(ui_indicatorSpeedWheel, missing, true);
   setNeedleAngle(ui_indicatorPitch, missing, false);
   setNeedleAngle(ui_indicatorRoll, missing, false);
-  setIntegerLabel(ui_speedWheel, missing);
   setSignedTenthsLabel(ui_anglePitch, missing);
   setSignedTenthsLabel(ui_angleRoll, missing);
   setTemperatureBar(ui_tempCVT, missing);
@@ -521,8 +539,6 @@ void disableRfPodDisplay() {
   OptionalFloat missing;
   RfPodSnapshot missing_snapshot;
 
-  setNeedleAngle(ui_indicatorSpeedGPS, missing, true);
-  setIntegerLabel(ui_speedGPS, missing);
   setCurrentTimeLabel(ui_timeCurrent, missing_snapshot);
   setLapTimeLabel(ui_timeCurrentLap, missing);
   setLapTimeLabel(ui_timeLastLap, missing);
@@ -547,15 +563,15 @@ void updateDashboardFromSerial(lv_timer_t *timer) {
     }
   } else {
     sensor_pod_display_enabled = true;
-    setNeedleAngle(ui_indicatorSpeedWheel, sensor_snapshot.wheel_speed_mph, true);
     setNeedleAngle(ui_indicatorPitch, sensor_snapshot.pitch_deg, false);
     setNeedleAngle(ui_indicatorRoll, sensor_snapshot.roll_deg, false);
-    setIntegerLabel(ui_speedWheel, sensor_snapshot.wheel_speed_mph);
     setSignedTenthsLabel(ui_anglePitch, sensor_snapshot.pitch_deg);
     setSignedTenthsLabel(ui_angleRoll, sensor_snapshot.roll_deg);
     setTemperatureBar(ui_tempCVT, sensor_snapshot.cvt_temp_f);
     setTemperatureBar(ui_tempAux, sensor_snapshot.aux_temp_f);
   }
+
+  updateSpeedDisplays(sensor_snapshot.wheel_speed_mph, rf_snapshot.gps_speed_mph);
 
   if (!rf_data_live) {
     if (rf_pod_display_enabled) {
@@ -566,8 +582,6 @@ void updateDashboardFromSerial(lv_timer_t *timer) {
   }
 
   rf_pod_display_enabled = true;
-  setNeedleAngle(ui_indicatorSpeedGPS, rf_snapshot.gps_speed_mph, true);
-  setIntegerLabel(ui_speedGPS, rf_snapshot.gps_speed_mph);
   setCurrentTimeLabel(ui_timeCurrent, rf_snapshot);
   setLapTimeLabel(ui_timeCurrentLap, rf_snapshot.lap_current_ms);
   setLapTimeLabel(ui_timeLastLap, rf_snapshot.lap_last_ms);
@@ -581,21 +595,6 @@ void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color
   gfx.pushImageDMA(area->x1, area->y1, area->x2 - area->x1 + 1, area->y2 - area->y1 + 1, (lgfx::rgb565_t *)&color_p->full);
 
   lv_disp_flush_ready(disp);  //	Tell lvgl that the refresh is complete
-}
-
-//  Read touch
-void my_touchpad_read( lv_indev_drv_t * indev_driver, lv_indev_data_t * data )
-{
-  data->state = LV_INDEV_STATE_REL;// The state of data existence when releasing the finger
-  bool touched = gfx.getTouch( &touch_x, &touch_y );
-  if (touched)
-  {
-    data->state = LV_INDEV_STATE_PR;
-
-    //  Set coordinates
-    data->point.x = touch_x;
-    data->point.y = touch_y;
-  }
 }
 
 bool i2cScanForAddress(uint8_t address) {
@@ -681,19 +680,13 @@ void setup()
   disp_drv.draw_buf = &draw_buf;
   lv_disp_drv_register(&disp_drv);
 
-  // Initialize input device driver program
-  static lv_indev_drv_t indev_drv;
-  lv_indev_drv_init(&indev_drv);
-  indev_drv.type = LV_INDEV_TYPE_POINTER;
-  indev_drv.read_cb = my_touchpad_read;
-  lv_indev_drv_register(&indev_drv);
-
   delay(100);
   gfx.fillScreen(TFT_BLACK);
   // lv_demo_widgets();// Main UI interface
   ui_init();
   disableSensorPodDisplay();
   disableRfPodDisplay();
+  updateSpeedDisplays(OptionalFloat{}, OptionalFloat{});
   lv_timer_create(updateDashboardFromSerial, kDisplayUpdateMs, nullptr);
 
   Serial.println( "Setup done" );

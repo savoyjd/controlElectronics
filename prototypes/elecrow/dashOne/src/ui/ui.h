@@ -43,8 +43,8 @@ LV_IMG_DECLARE(ui_img_speedgage350_png);    // assets/speedGage350.png
 LV_IMG_DECLARE(ui_img_tempcvtsmall_png);    // assets/tempCVTsmall.png
 LV_IMG_DECLARE(ui_img_tempsmall_png);    // assets/tempSmall.png
 LV_IMG_DECLARE(ui_img_vertical_temp_gauge_png);    // assets/vertical_temp_gauge.png
-LV_IMG_DECLARE(ui_img_orangeneedlesmal_png);    // assets/orangeNeedleSmal.png
-LV_IMG_DECLARE(ui_img_blueneedlesmall_png);    // assets/blueNeedleSmall.png
+LV_IMG_DECLARE(ui_img_orange_needle_5x125_png);    // assets/orange_needle_5x125.png
+LV_IMG_DECLARE(ui_img_blue_needle_5x125_png);    // assets/blue_needle_5x125.png
 
 // UI INIT
 void ui_init(void);
