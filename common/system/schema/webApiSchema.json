@@ -1,0 +1,63 @@
+{
+  "schemaName": "sensorFamilyWebApi",
+  "schemaSalt": 0,
+  "apiVersion": 1,
+  "encoding": "utf8Json",
+  "fieldNaming": "camelCase",
+  "endpoints": [
+    {"method": "GET", "path": "/", "response": "textHtml"},
+    {"method": "GET", "path": "/api/v1/identity", "response": "identity"},
+    {"method": "GET", "path": "/api/v1/snapshot", "response": "snapshot"},
+    {"method": "GET", "path": "/api/v1/schema", "response": "schema"}
+  ],
+  "hostRoles": {
+    "vehicleMirror": "Locally acquired data encoded for LoRa but not proven received by the paddock",
+    "paddockReceiver": "Data decoded from a received LoRa frame"
+  },
+  "wifiTopology": {
+    "vehicleMirror": {
+      "requiredMode": "softAp",
+      "stationEnabled": false
+    },
+    "paddockReceiver": {
+      "requiredMode": "softApAndStation",
+      "softApIndependentOfStation": true
+    }
+  },
+  "identityRequiredFields": [
+    "apiVersion",
+    "webApiSchemaId",
+    "hostRole",
+    "hostDeviceId",
+    "firmwareVersion",
+    "canSchemaId",
+    "loraSchemaId"
+  ],
+  "snapshotRequiredFields": [
+    "apiVersion",
+    "webApiSchemaId",
+    "hostRole",
+    "hostDeviceId",
+    "generatedAt",
+    "telemetrySourceNode",
+    "loraSchemaId",
+    "canSchemaId",
+    "navigation",
+    "dynamicTelemetry",
+    "thermalTelemetry",
+    "statusTelemetry",
+    "transport"
+  ],
+  "transportRequiredFields": [
+    "mode",
+    "lastPacketSequence",
+    "lastPacketTimestamp",
+    "transportAgeMs",
+    "packetValid"
+  ],
+  "transportModes": {
+    "localPreTransmit": "Vehicle-side representation before radio delivery",
+    "receivedLora": "Paddock-side representation of received radio data"
+  },
+  "missingDataEncoding": "nullWithValidityAndAge"
+}

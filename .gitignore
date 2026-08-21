@@ -1,0 +1,4 @@
+# Local KiCad state
+**/~*.lck
+**/.history/
+

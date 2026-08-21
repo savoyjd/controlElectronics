@@ -1,0 +1,179 @@
+{
+  "schemaName": "sensorFamilyLora",
+  "schemaSalt": 0,
+  "link": {
+    "region": "US915",
+    "frequencyMinimumHz": 902000000,
+    "frequencyMaximumHz": 928000000,
+    "maximumApplicationPayloadBytes": 192,
+    "byteOrder": "littleEndian",
+    "applicationCrc": "crc32c"
+  },
+  "coordinateReference": {
+    "datum": "WGS84",
+    "encoding": "signedDecimalDegreesE7",
+    "latitudePositiveDirection": "north",
+    "latitudeMinimum": -900000000,
+    "latitudeMaximum": 900000000,
+    "longitudePositiveDirection": "east",
+    "longitudeMinimum": -1800000000,
+    "longitudeMaximum": 1800000000
+  },
+  "header": [
+    {"name": "magic", "type": "uint16", "offset": 0, "requiredValue": 21330},
+    {"name": "protocolVersion", "type": "uint8", "offset": 2, "requiredValue": 1},
+    {"name": "packetType", "type": "uint8", "offset": 3},
+    {"name": "schemaId", "type": "uint16", "offset": 4},
+    {"name": "sourceNode", "type": "uint16", "offset": 6},
+    {"name": "sequence", "type": "uint16", "offset": 8},
+    {"name": "timestamp", "type": "uint32", "offset": 10, "unit": "millisecond"},
+    {"name": "flags", "type": "uint8", "offset": 14},
+    {"name": "payloadLength", "type": "uint8", "offset": 15}
+  ],
+  "trailer": [
+    {"name": "frameCrc", "type": "uint32", "size": 4, "coverage": "headerAndPayload"}
+  ],
+  "packetTypes": {
+    "1": {
+      "name": "navigation",
+      "nominalPeriodMs": 500,
+      "fields": [
+        {"name": "latitude", "type": "int32", "offset": 0, "scale": 0.0000001, "unit": "degree"},
+        {"name": "longitude", "type": "int32", "offset": 4, "scale": 0.0000001, "unit": "degree"},
+        {"name": "altitude", "type": "int16", "offset": 8, "scale": 0.1, "unit": "meter"},
+        {"name": "groundSpeed", "type": "uint16", "offset": 10, "scale": 0.01, "unit": "meterPerSecond"},
+        {"name": "courseOverGround", "type": "uint16", "offset": 12, "scale": 0.01, "unit": "degree"},
+        {"name": "solutionAge", "type": "uint16", "offset": 14, "unit": "millisecond"},
+        {"name": "satellitesUsed", "type": "uint8", "offset": 16},
+        {"name": "fixType", "type": "uint8", "offset": 17},
+        {"name": "solutionFlags", "type": "uint8", "offset": 18},
+        {"name": "solutionCounter", "type": "uint8", "offset": 19}
+      ]
+    },
+    "2": {
+      "name": "dynamicTelemetry",
+      "nominalPeriodMs": 500,
+      "fields": [
+        {"name": "canSchemaId", "type": "uint16", "offset": 0},
+        {"name": "windowDuration", "type": "uint16", "offset": 2, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "wheelSpeed", "type": "uint16", "offset": 4, "scale": 0.01, "unit": "meterPerSecond", "unavailableValue": 65535},
+        {"name": "wheelEdgePeriod", "type": "uint32", "offset": 6, "unit": "microsecond", "unavailableValue": 4294967295},
+        {"name": "wheelEdgeAge", "type": "uint8", "offset": 10, "scale": 10, "unit": "millisecond", "saturationValue": 255},
+        {"name": "wheelFlags", "type": "uint8", "offset": 11},
+        {"name": "wheelCanAge", "type": "uint16", "offset": 12, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "shaftSpeed", "type": "uint16", "offset": 14, "unit": "revolutionPerMinute", "unavailableValue": 65535},
+        {"name": "shaftEdgePeriod", "type": "uint32", "offset": 16, "unit": "microsecond", "unavailableValue": 4294967295},
+        {"name": "shaftEdgeAge", "type": "uint8", "offset": 20, "scale": 10, "unit": "millisecond", "saturationValue": 255},
+        {"name": "shaftFlags", "type": "uint8", "offset": 21},
+        {"name": "shaftCanAge", "type": "uint16", "offset": 22, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "latestDisplacement", "type": "int16", "offset": 24, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "minimumDisplacement", "type": "int16", "offset": 26, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "maximumDisplacement", "type": "int16", "offset": 28, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "displacementFlags", "type": "uint8", "offset": 30},
+        {"name": "displacementCanAge", "type": "uint16", "offset": 31, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "latestAccelerationX", "type": "int16", "offset": 33, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "latestAccelerationY", "type": "int16", "offset": 35, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "latestAccelerationZ", "type": "int16", "offset": 37, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "minimumAccelerationX", "type": "int16", "offset": 39, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "minimumAccelerationY", "type": "int16", "offset": 41, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "minimumAccelerationZ", "type": "int16", "offset": 43, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "maximumAccelerationX", "type": "int16", "offset": 45, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "maximumAccelerationY", "type": "int16", "offset": 47, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "maximumAccelerationZ", "type": "int16", "offset": 49, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "accelerationFlags", "type": "uint8", "offset": 51},
+        {"name": "accelerationCanAge", "type": "uint16", "offset": 52, "unit": "millisecond", "saturationValue": 65535}
+      ]
+    },
+    "3": {
+      "name": "thermalTelemetry",
+      "nominalPeriodMs": 2000,
+      "fields": [
+        {"name": "canSchemaId", "type": "uint16", "offset": 0},
+        {"name": "thermocouple1Data", "type": "bytes", "offset": 2, "size": 8},
+        {"name": "thermocouple1CanAge", "type": "uint16", "offset": 10, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "thermocouple2Data", "type": "bytes", "offset": 12, "size": 8},
+        {"name": "thermocouple2CanAge", "type": "uint16", "offset": 20, "unit": "millisecond", "saturationValue": 65535}
+      ]
+    },
+    "4": {
+      "name": "statusTelemetry",
+      "nominalPeriodMs": 5000,
+      "fields": [
+        {"name": "canSchemaId", "type": "uint16", "offset": 0},
+        {"name": "nodeIdentityData", "type": "bytes", "offset": 2, "size": 8},
+        {"name": "nodeIdentityCanAge", "type": "uint16", "offset": 10, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "systemStatusData", "type": "bytes", "offset": 12, "size": 8},
+        {"name": "systemStatusCanAge", "type": "uint16", "offset": 20, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "navigationQualityData", "type": "bytes", "offset": 22, "size": 8},
+        {"name": "navigationQualityCanAge", "type": "uint16", "offset": 30, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "schemaAnnouncementData", "type": "bytes", "offset": 32, "size": 8},
+        {"name": "schemaAnnouncementCanAge", "type": "uint16", "offset": 40, "unit": "millisecond", "saturationValue": 65535}
+      ]
+    },
+    "5": {
+      "name": "command",
+      "eventDriven": true,
+      "authentication": "hmacSha256Truncated128",
+      "maximumPayloadBytes": 157,
+      "envelope": [
+        {"name": "commandCode", "type": "uint8", "offset": 0},
+        {"name": "targetProduct", "type": "uint8", "offset": 1},
+        {"name": "targetInstance", "type": "uint8", "offset": 2},
+        {"name": "commandFlags", "type": "uint8", "offset": 3},
+        {"name": "commandCounter", "type": "uint32", "offset": 4},
+        {"name": "parameterLength", "type": "uint8", "offset": 8},
+        {"name": "parameters", "type": "bytes", "offset": 9, "variableLength": true},
+        {"name": "authenticationTag", "type": "bytes", "size": 16, "location": "payloadEnd"}
+      ]
+    },
+    "6": {
+      "name": "commandResponse",
+      "eventDriven": true,
+      "authentication": "hmacSha256Truncated128",
+      "payloadBytes": 27,
+      "fields": [
+        {"name": "commandCode", "type": "uint8", "offset": 0},
+        {"name": "commandCounter", "type": "uint32", "offset": 1},
+        {"name": "targetProduct", "type": "uint8", "offset": 5},
+        {"name": "targetInstance", "type": "uint8", "offset": 6},
+        {"name": "responseStage", "type": "uint8", "offset": 7},
+        {"name": "resultCode", "type": "uint8", "offset": 8},
+        {"name": "detailCode", "type": "uint8", "offset": 9},
+        {"name": "downstreamTransactionId", "type": "uint8", "offset": 10},
+        {"name": "authenticationTag", "type": "bytes", "offset": 11, "size": 16}
+      ]
+    }
+  },
+  "commands": {
+    "1": {
+      "name": "captureLevel",
+      "requiredTargetProduct": 2,
+      "parameterBytes": 2,
+      "parameters": [
+        {"name": "sensorYawOffset", "type": "int16", "offset": 0, "scale": 0.01, "unit": "degree", "minimum": -18000, "maximum": 18000}
+      ]
+    },
+    "2": {
+      "name": "zeroSuspensionDisplacement",
+      "requiredTargetProduct": 2,
+      "parameterBytes": 0
+    },
+    "3": {
+      "name": "driverText",
+      "requiredTargetProduct": 3,
+      "parameterBytesMaximum": 131,
+      "parameters": [
+        {"name": "displayDuration", "type": "uint16", "offset": 0, "unit": "second", "maximum": 3600},
+        {"name": "textLength", "type": "uint8", "offset": 2, "maximum": 128},
+        {"name": "text", "type": "utf8", "offset": 3, "maximumBytes": 128}
+      ]
+    }
+  },
+  "enumerations": {
+    "flags": {"0": "ackRequested", "1": "acknowledgement", "2": "encrypted", "3": "gnssTimeValid"},
+    "productType": {"1": "sensorRF", "2": "sensorOne", "3": "controlHead"},
+    "commandCode": {"1": "captureLevel", "2": "zeroSuspensionDisplacement", "3": "driverText"},
+    "responseStage": {"0": "received", "1": "downstreamAccepted", "2": "completed"},
+    "commandResult": {"0": "accepted", "1": "completed", "2": "rejected", "3": "busy", "4": "unsupported", "5": "authenticationFailed", "6": "replayRejected", "7": "downstreamTimeout", "8": "invalidParameters", "9": "deliveryFailed"}
+  }
+}

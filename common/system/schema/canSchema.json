@@ -1,0 +1,241 @@
+{
+  "schemaName": "sensorFamilyCan",
+  "schemaSalt": 0,
+  "link": {
+    "standard": "ISO11898-1-classic",
+    "bitRate": 500000,
+    "identifierBits": 11,
+    "payloadBytesMaximum": 8,
+    "byteOrder": "littleEndian"
+  },
+  "coordinateReference": {
+    "datum": "WGS84",
+    "encoding": "signedDecimalDegreesE7",
+    "latitudePositiveDirection": "north",
+    "latitudeMinimum": -900000000,
+    "latitudeMaximum": 900000000,
+    "longitudePositiveDirection": "east",
+    "longitudeMinimum": -1800000000,
+    "longitudeMaximum": 1800000000
+  },
+  "messages": [
+    {
+      "name": "schemaAnnouncement",
+      "identifier": 128,
+      "periodMs": 1000,
+      "fields": [
+        {"name": "canSchemaId", "type": "uint16", "offset": 0},
+        {"name": "loraSchemaId", "type": "uint16", "offset": 2},
+        {"name": "productType", "type": "uint8", "offset": 4},
+        {"name": "hardwareRevision", "type": "uint8", "offset": 5},
+        {"name": "firmwareMajor", "type": "uint8", "offset": 6},
+        {"name": "firmwareMinor", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "nodeIdentity",
+      "identifier": 129,
+      "periodMs": 1000,
+      "fields": [
+        {"name": "productType", "type": "uint8", "offset": 0},
+        {"name": "nodeInstance", "type": "uint8", "offset": 1},
+        {"name": "hardwareRevision", "type": "uint8", "offset": 2},
+        {"name": "reserved", "type": "uint8", "offset": 3, "requiredValue": 0},
+        {"name": "deviceId", "type": "uint32", "offset": 4}
+      ]
+    },
+    {
+      "name": "navigationPosition",
+      "identifier": 256,
+      "periodMs": 100,
+      "fields": [
+        {"name": "latitude", "type": "int32", "offset": 0, "scale": 0.0000001, "unit": "degree"},
+        {"name": "longitude", "type": "int32", "offset": 4, "scale": 0.0000001, "unit": "degree"}
+      ]
+    },
+    {
+      "name": "navigationMotion",
+      "identifier": 257,
+      "periodMs": 100,
+      "fields": [
+        {"name": "groundSpeed", "type": "uint16", "offset": 0, "scale": 0.01, "unit": "meterPerSecond"},
+        {"name": "courseOverGround", "type": "uint16", "offset": 2, "scale": 0.01, "unit": "degree"},
+        {"name": "altitude", "type": "int16", "offset": 4, "scale": 0.1, "unit": "meter"},
+        {"name": "solutionCounter", "type": "uint8", "offset": 6},
+        {"name": "solutionFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "navigationQuality",
+      "identifier": 258,
+      "periodMs": 500,
+      "fields": [
+        {"name": "solutionAge", "type": "uint16", "offset": 0, "unit": "millisecond"},
+        {"name": "horizontalDilution", "type": "uint16", "offset": 2, "scale": 0.01},
+        {"name": "satellitesUsed", "type": "uint8", "offset": 4},
+        {"name": "fixType", "type": "uint8", "offset": 5},
+        {"name": "gnssUpdateRate", "type": "uint8", "offset": 6, "scale": 0.1, "unit": "hertz"},
+        {"name": "reserved", "type": "uint8", "offset": 7, "requiredValue": 0}
+      ]
+    },
+    {
+      "name": "systemStatus",
+      "identifier": 259,
+      "periodMs": 1000,
+      "fields": [
+        {"name": "uptime", "type": "uint32", "offset": 0, "unit": "second"},
+        {"name": "supplyVoltage", "type": "uint16", "offset": 4, "unit": "millivolt"},
+        {"name": "resetReason", "type": "uint8", "offset": 6},
+        {"name": "statusFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "wheelSpeed",
+      "identifier": 384,
+      "periodMs": 50,
+      "fields": [
+        {"name": "vehicleSpeed", "type": "uint16", "offset": 0, "scale": 0.01, "unit": "meterPerSecond", "unavailableValue": 65535},
+        {"name": "edgePeriod", "type": "uint32", "offset": 2, "unit": "microsecond", "unavailableValue": 4294967295, "saturationValue": 4294967294},
+        {"name": "edgeAge", "type": "uint8", "offset": 6, "scale": 10, "unit": "millisecond", "saturationValue": 255},
+        {"name": "speedFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "shaftSpeed",
+      "identifier": 385,
+      "periodMs": 50,
+      "fields": [
+        {"name": "shaftSpeed", "type": "uint16", "offset": 0, "scale": 1, "unit": "revolutionPerMinute", "unavailableValue": 65535},
+        {"name": "edgePeriod", "type": "uint32", "offset": 2, "unit": "microsecond", "unavailableValue": 4294967295, "saturationValue": 4294967294},
+        {"name": "edgeAge", "type": "uint8", "offset": 6, "scale": 10, "unit": "millisecond", "saturationValue": 255},
+        {"name": "speedFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "suspensionDisplacement",
+      "identifier": 386,
+      "periodMs": 50,
+      "fields": [
+        {"name": "latestDisplacement", "type": "int16", "offset": 0, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "minimumDisplacement", "type": "int16", "offset": 2, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "maximumDisplacement", "type": "int16", "offset": 4, "scale": 0.1, "unit": "millimeter", "unavailableValue": -32768},
+        {"name": "windowDuration", "type": "uint8", "offset": 6, "unit": "millisecond", "saturationValue": 255},
+        {"name": "displacementFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "thermocouple1",
+      "identifier": 387,
+      "periodMs": 100,
+      "fields": [
+        {"name": "thermocoupleTemperature", "type": "int16", "offset": 0, "scale": 0.1, "unit": "degreeCelsius", "unavailableValue": -32768},
+        {"name": "coldJunctionTemperature", "type": "int16", "offset": 2, "scale": 0.1, "unit": "degreeCelsius", "unavailableValue": -32768},
+        {"name": "sampleAge", "type": "uint16", "offset": 4, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "thermocoupleFaults", "type": "uint8", "offset": 6},
+        {"name": "thermocoupleStatus", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "thermocouple2",
+      "identifier": 388,
+      "periodMs": 100,
+      "fields": [
+        {"name": "thermocoupleTemperature", "type": "int16", "offset": 0, "scale": 0.1, "unit": "degreeCelsius", "unavailableValue": -32768},
+        {"name": "coldJunctionTemperature", "type": "int16", "offset": 2, "scale": 0.1, "unit": "degreeCelsius", "unavailableValue": -32768},
+        {"name": "sampleAge", "type": "uint16", "offset": 4, "unit": "millisecond", "saturationValue": 65535},
+        {"name": "thermocoupleFaults", "type": "uint8", "offset": 6},
+        {"name": "thermocoupleStatus", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "accelerationVector",
+      "identifier": 389,
+      "periodMs": 10,
+      "fields": [
+        {"name": "accelerationX", "type": "int16", "offset": 0, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "accelerationY", "type": "int16", "offset": 2, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "accelerationZ", "type": "int16", "offset": 4, "scale": 0.01, "unit": "meterPerSecondSquared", "unavailableValue": -32768},
+        {"name": "sampleCounter", "type": "uint8", "offset": 6},
+        {"name": "accelerationFlags", "type": "uint8", "offset": 7}
+      ]
+    },
+    {
+      "name": "sensorCalibrationCommand",
+      "identifier": 768,
+      "eventDriven": true,
+      "fields": [
+        {"name": "commandCode", "type": "uint8", "offset": 0},
+        {"name": "transactionId", "type": "uint8", "offset": 1},
+        {"name": "targetInstance", "type": "uint8", "offset": 2},
+        {"name": "commandFlags", "type": "uint8", "offset": 3},
+        {"name": "commandParameter", "type": "int16", "offset": 4},
+        {"name": "confirmationToken", "type": "uint16", "offset": 6}
+      ]
+    },
+    {
+      "name": "sensorCalibrationResponse",
+      "identifier": 769,
+      "eventDriven": true,
+      "fields": [
+        {"name": "commandCode", "type": "uint8", "offset": 0},
+        {"name": "transactionId", "type": "uint8", "offset": 1},
+        {"name": "responderInstance", "type": "uint8", "offset": 2},
+        {"name": "resultCode", "type": "uint8", "offset": 3},
+        {"name": "calibrationState", "type": "uint8", "offset": 4},
+        {"name": "detailCode", "type": "uint8", "offset": 5},
+        {"name": "reserved", "type": "uint16", "offset": 6, "requiredValue": 0}
+      ]
+    }
+  ],
+  "enumerations": {
+    "fixType": {"0": "none", "1": "deadReckoning", "2": "twoDimensional", "3": "threeDimensional"},
+    "productType": {"1": "sensorRF", "2": "sensorOne", "3": "controlHead"},
+    "solutionFlags": {"0": "positionValid", "1": "velocityValid", "2": "timeValid", "3": "differential"},
+    "speedFlags": {"0": "signalValid", "1": "speedValid", "2": "stopped", "3": "periodValid", "4": "calibrationValid", "5": "inputFault"},
+    "displacementFlags": {"0": "latestValid", "1": "windowValid", "2": "calibrationValid", "3": "inputFault", "4": "windowDurationSaturated", "5": "valueClipped"},
+    "thermocoupleType": {"0": "B", "1": "E", "2": "J", "3": "K", "4": "N", "5": "R", "6": "S", "7": "T", "15": "unconfigured"},
+    "thermocoupleFaults": {"0": "openCircuit", "1": "overUnderVoltage", "2": "thermocoupleLow", "3": "thermocoupleHigh", "4": "coldJunctionLow", "5": "coldJunctionHigh", "6": "thermocoupleRange", "7": "coldJunctionRange"},
+    "thermocoupleStatus": {"0-3": "thermocoupleType", "4": "thermocoupleTemperatureValid", "5": "coldJunctionTemperatureValid", "6": "converterPresent", "7": "configurationValid"},
+    "accelerationFlags": {"0": "dataValid", "1": "sampleOverrun", "2": "valueClipped", "3": "calibrationValid", "4": "coordinateFrameValid"},
+    "calibrationCommand": {"1": "captureLevel", "2": "zeroSuspensionDisplacement"},
+    "calibrationConfirmationToken": {"captureLevel": 22092, "zeroSuspensionDisplacement": 17754},
+    "calibrationCommandParameter": {
+      "captureLevel": {"name": "sensorYawOffset", "scale": 0.01, "unit": "degree", "minimum": -18000, "maximum": 18000},
+      "zeroSuspensionDisplacement": {"name": "reserved", "requiredValue": 0}
+    },
+    "calibrationResult": {"0": "accepted", "1": "completed", "2": "rejected", "3": "busy", "4": "unsupported", "5": "invalidToken", "6": "validationFailed", "7": "storageFailed"},
+    "calibrationState": {"0": "uncalibrated", "1": "collecting", "2": "valid", "3": "failed"},
+    "statusFlags": {"0": "gnssPresent", "1": "gnssHealthy", "2": "loraHealthy", "3": "canHealthy", "4": "configurationValid"}
+  },
+  "transportMessages": [
+    {
+      "name": "driverTextTransfer",
+      "protocol": "ISO15765-2-normal-addressing",
+      "transmitIdentifier": 784,
+      "flowControlAndResponseIdentifier": 785,
+      "maximumPduBytes": 135,
+      "fields": [
+        {"name": "messageVersion", "type": "uint8", "offset": 0, "requiredValue": 1},
+        {"name": "messageId", "type": "uint16", "offset": 1},
+        {"name": "messageFlags", "type": "uint8", "offset": 3},
+        {"name": "displayDuration", "type": "uint16", "offset": 4, "unit": "second"},
+        {"name": "textLength", "type": "uint8", "offset": 6, "maximum": 128},
+        {"name": "text", "type": "utf8", "offset": 7, "maximumBytes": 128}
+      ]
+    },
+    {
+      "name": "driverTextResponse",
+      "protocol": "ISO15765-2-normal-addressing",
+      "transmitIdentifier": 785,
+      "flowControlIdentifier": 784,
+      "maximumPduBytes": 6,
+      "fields": [
+        {"name": "messageVersion", "type": "uint8", "offset": 0, "requiredValue": 1},
+        {"name": "messageId", "type": "uint16", "offset": 1},
+        {"name": "resultCode", "type": "uint8", "offset": 3},
+        {"name": "detailCode", "type": "uint8", "offset": 4},
+        {"name": "reserved", "type": "uint8", "offset": 5, "requiredValue": 0}
+      ]
+    }
+  ]
+}

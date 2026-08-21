@@ -1,7 +1,8 @@
 {
   "folders": [
     {
-      "path": "file:///c%3A/Users/savoy_v55qse0/workspace_ccstheia"
+      "name": "sensorOne — MSPM0G3507 reference",
+      "path": "mcan_multi_message_tx"
     }
   ],
   "settings": {}

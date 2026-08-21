@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "sensorRF: build",
+      "type": "shell",
+      "command": "idf.py",
+      "args": [
+        "build"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "sensorRF: flash",
+      "type": "shell",
+      "command": "idf.py",
+      "args": [
+        "-p",
+        "COM13",
+        "flash"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "sensorRF: monitor",
+      "type": "shell",
+      "command": "idf.py",
+      "args": [
+        "-p",
+        "COM13",
+        "monitor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

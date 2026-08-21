@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "Common interfaces",
+      "path": "common/system"
+    },
+    {
+      "name": "Common software",
+      "path": "common/software"
+    },
+    {
+      "name": "sensorRF — ESP-IDF",
+      "path": "sensorRF/software"
+    },
+    {
+      "name": "sensorBridge — ESP-IDF",
+      "path": "sensorBridge/software"
+    },
+    {
+      "name": "dashOne — PlatformIO",
+      "path": "dashOne/software"
+    },
+    {
+      "name": "sensorOne — MSPM0",
+      "path": "sensorOne/software"
+    }
+  ],
+  "settings": {}
+}

@@ -1,0 +1,13 @@
+# ESP-IDF generated files
+/build/
+/sdkconfig
+/sdkconfig.old
+/dependencies.lock
+/managed_components/
+
+# Editor and local output
+/.cache/
+debug.log
+report.txt
+__pycache__/
+*.py[cod]

@@ -1,0 +1,14 @@
+{
+  "idf.currentSetup": "C:\\Espressif\\v5.5.5\\esp-idf",
+  "idf.customExtraVars": {},
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Users\\savoy_v55qse0\\Documents\\controlElectronics\\sensorRF\\software\\build"
+  ],
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.portWin": "COM13"
+}

@@ -1,0 +1,172 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "MSPM0G350X" --part "Default" --package "LQFP-48(PT)" --product "mspm0_sdk@2.10.00.04"
+ * @v2CliArgs --device "MSPM0G3507" --package "LQFP-48(PT)" --product "mspm0_sdk@2.10.00.04"
+ * @versions {"tool":"1.26.2+4477"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const ADC12  = scripting.addModule("/ti/driverlib/ADC12", {}, false);
+const ADC121 = ADC12.addInstance();
+const GPIO   = scripting.addModule("/ti/driverlib/GPIO", {}, false);
+const GPIO1  = GPIO.addInstance();
+const GPIO2  = GPIO.addInstance();
+const MCAN   = scripting.addModule("/ti/driverlib/MCAN", {}, false);
+const MCAN1  = MCAN.addInstance();
+const SPI    = scripting.addModule("/ti/driverlib/SPI", {}, false);
+const SPI1   = SPI.addInstance();
+const SYSCTL = scripting.addModule("/ti/driverlib/SYSCTL");
+const UART   = scripting.addModule("/ti/driverlib/UART", {}, false);
+const UART1  = UART.addInstance();
+const VREF   = scripting.addModule("/ti/driverlib/VREF");
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+const mux4       = system.clockTree["EXHFMUX"];
+mux4.inputSelect = "EXHFMUX_XTAL";
+
+const pinFunction3     = system.clockTree["HFCLKEXT"];
+pinFunction3.inputFreq = 40;
+
+const pinFunction4        = system.clockTree["HFXT"];
+pinFunction4.enable       = true;
+pinFunction4.HFXTStartup  = 10;
+pinFunction4.HFCLKMonitor = true;
+pinFunction4.inputFreq    = 40;
+
+ADC121.$name                             = "ADC12_1";
+ADC121.adcPin0Config.hideOutputInversion = scripting.forceWrite(false);
+ADC121.adcPin0Config.$name               = "ti_driverlib_gpio_GPIOPinGeneric9";
+
+const Board = scripting.addModule("/ti/driverlib/Board", {}, false);
+
+GPIO1.$name                              = "GPIO_SWITCHES";
+GPIO1.port                               = "PORTB";
+GPIO1.portSegment                        = "Upper";
+GPIO1.associatedPins.create(2);
+GPIO1.associatedPins[0].$name            = "USER_SWITCH_1";
+GPIO1.associatedPins[0].direction        = "INPUT";
+GPIO1.associatedPins[0].internalResistor = "PULL_UP";
+GPIO1.associatedPins[0].polarity         = "FALL";
+GPIO1.associatedPins[0].assignedPin      = "17";
+GPIO1.associatedPins[1].$name            = "USER_SWITCH_2";
+GPIO1.associatedPins[1].direction        = "INPUT";
+GPIO1.associatedPins[1].assignedPin      = "18";
+
+GPIO2.$name                         = "HE_INPUTS";
+GPIO2.port                          = "PORTA";
+GPIO2.portSegment                   = "Upper";
+GPIO2.associatedPins.create(2);
+GPIO2.associatedPins[0].direction   = "INPUT";
+GPIO2.associatedPins[0].assignedPin = "16";
+GPIO2.associatedPins[0].$name       = "HE_1_IN";
+GPIO2.associatedPins[1].$name       = "HE_2_IN";
+GPIO2.associatedPins[1].direction   = "INPUT";
+GPIO2.associatedPins[1].assignedPin = "17";
+
+MCAN1.$name                    = "MCAN0";
+MCAN1.wkupReqEnable            = true;
+MCAN1.autoWkupEnable           = true;
+MCAN1.emulationEnable          = true;
+MCAN1.tdcEnable                = true;
+MCAN1.additionalCoreConfig     = true;
+MCAN1.rrfe                     = true;
+MCAN1.rrfs                     = true;
+MCAN1.anfe                     = "1";
+MCAN1.anfs                     = "1";
+MCAN1.txEventFIFOWaterMark     = 0;
+MCAN1.interruptFlags           = ["DL_MCAN_INTERRUPT_ARA","DL_MCAN_INTERRUPT_BEU","DL_MCAN_INTERRUPT_BO","DL_MCAN_INTERRUPT_DRX","DL_MCAN_INTERRUPT_ELO","DL_MCAN_INTERRUPT_EP","DL_MCAN_INTERRUPT_EW","DL_MCAN_INTERRUPT_MRAF","DL_MCAN_INTERRUPT_PEA","DL_MCAN_INTERRUPT_PED","DL_MCAN_INTERRUPT_TC","DL_MCAN_INTERRUPT_TEFN","DL_MCAN_INTERRUPT_TOO","DL_MCAN_INTERRUPT_TSW","DL_MCAN_INTERRUPT_WDI"];
+MCAN1.interruptLine            = ["DL_MCAN_INTR_LINE_NUM_1"];
+MCAN1.interruptLine1Flag       = ["DL_MCAN_INTR_MASK_ALL"];
+MCAN1.m0interrupts             = ["DL_MCAN_MSP_INTERRUPT_LINE1"];
+MCAN1.overrideRetention        = true;
+MCAN1.desiredNomRate           = 250;
+MCAN1.stdFiltType              = "01";
+MCAN1.flesa                    = 0;
+MCAN1.lse                      = 0;
+MCAN1.desiredDataRate          = 2;
+MCAN1.rxFIFO1waterMark         = 0;
+MCAN1.rxFIFO0waterMark         = 0;
+MCAN1.lss                      = 0;
+MCAN1.rxFIFO0startAddr         = 0;
+MCAN1.rxFIFO1startAddr         = 0;
+MCAN1.rxBufStartAddr           = 0;
+MCAN1.rxFIFO1size              = 0;
+MCAN1.rxFIFO0size              = 0;
+MCAN1.txFIFOSize               = 10;
+MCAN1.txStartAddr              = 12;
+MCAN1.txEventFIFOStartAddr     = 640;
+MCAN1.enableInterrupt          = true;
+MCAN1.peripheral.$assign       = "CANFD0";
+MCAN1.peripheral.rxPin.$assign = "PA13";
+MCAN1.peripheral.txPin.$assign = "PA12";
+MCAN1.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric0";
+MCAN1.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric1";
+
+SPI1.$name               = "SPI_0";
+SPI1.chipSelect          = ["1","2","3"];
+SPI1.sclkPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric2";
+SPI1.mosiPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric3";
+SPI1.misoPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric4";
+SPI1.cs1PinConfig.$name  = "ti_driverlib_gpio_GPIOPinGeneric5";
+SPI1.cs2PinConfig.$name  = "ti_driverlib_gpio_GPIOPinGeneric6";
+SPI1.cs3PinConfig.$name  = "ti_driverlib_gpio_GPIOPinGeneric7";
+
+SYSCTL.CANCLKSource          = "HFCLK";
+SYSCTL.useHFCLK_Manual       = true;
+SYSCTL.HFCLKSource           = "HFXT";
+SYSCTL.HFCLKMonitor          = true;
+SYSCTL.forceDefaultClkConfig = true;
+SYSCTL.clockTreeEn           = true;
+SYSCTL.HFCLK_Freq            = 8000000;
+SYSCTL.userTrimFrequency     = "SYSCTL_SYSOSCTRIMUSER_FREQ_SYSOSC24M";
+SYSCTL.enableSYSOSCFCL       = true;
+SYSCTL.enableROSC            = true;
+
+UART1.$name             = "UART_0";
+UART1.targetBaudRate    = 115200;
+UART1.parity            = "ODD";
+UART1.txPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric8";
+UART1.rxPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric10";
+
+VREF.basicVrefPins          = "VREF+-";
+VREF.vrefPosPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric11";
+VREF.vrefNegPinConfig.$name = "ti_driverlib_gpio_GPIOPinGeneric12";
+
+const ProjectConfig              = scripting.addModule("/ti/project_config/ProjectConfig", {}, false);
+ProjectConfig.migrationCondition = true;
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+pinFunction4.peripheral.$suggestSolution           = "SYSCTL";
+pinFunction4.peripheral.hfxInPin.$suggestSolution  = "PA5";
+pinFunction4.peripheral.hfxOutPin.$suggestSolution = "PA6";
+ADC121.peripheral.$suggestSolution                 = "ADC0";
+ADC121.peripheral.adcPin0.$suggestSolution         = "PA27";
+Board.peripheral.$suggestSolution                  = "DEBUGSS";
+Board.peripheral.swclkPin.$suggestSolution         = "PA20";
+Board.peripheral.swdioPin.$suggestSolution         = "PA19";
+GPIO1.associatedPins[0].pin.$suggestSolution       = "PB17";
+GPIO1.associatedPins[1].pin.$suggestSolution       = "PB18";
+GPIO2.associatedPins[0].pin.$suggestSolution       = "PA16";
+GPIO2.associatedPins[1].pin.$suggestSolution       = "PA17";
+SPI1.peripheral.$suggestSolution                   = "SPI0";
+SPI1.peripheral.sclkPin.$suggestSolution           = "PA11";
+SPI1.peripheral.mosiPin.$suggestSolution           = "PA14";
+SPI1.peripheral.misoPin.$suggestSolution           = "PA10";
+SPI1.peripheral.cs1Pin.$suggestSolution            = "PA3";
+SPI1.peripheral.cs2Pin.$suggestSolution            = "PA24";
+SPI1.peripheral.cs3Pin.$suggestSolution            = "PB14";
+UART1.peripheral.$suggestSolution                  = "UART0";
+UART1.peripheral.rxPin.$suggestSolution            = "PA1";
+UART1.peripheral.txPin.$suggestSolution            = "PA0";
+VREF.peripheral.$suggestSolution                   = "VREF";
+VREF.peripheral.vrefPosPin.$suggestSolution        = "PA23";
+VREF.peripheral.vrefNegPin.$suggestSolution        = "PA21";
